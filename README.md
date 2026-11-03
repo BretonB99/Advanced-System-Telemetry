@@ -46,17 +46,21 @@ Le logiciel s'appuie sur une architecture asynchrone non bloquante (`asyncio`) c
 L'arborescence complète du projet pré-compilation est organisée de la manière suivante dans vos répertoires :
 
 ```text
-MonProjetSupervision/
+Advanced-System-Telemetry/
 │
-├── main.pyw                 # Le moteur de capture invisible d'arrière-plan (Asyncio)
-├── dashboard.pyw            # L'interface graphique d'administration (CustomTkinter)
-├── config.py                # Configuration des variables et chemins locaux uniques
-├── security.py              # Gestion du démarrage auto et des droits NTFS de la machine
-├── writer.py                # Moteur d'écriture double et de compression GZIP asynchrone
-└── capteurs/                # Modules de surveillance indépendants (Package Python)
-    ├── __init__.py          # Fichier d'initialisation (vide)
-    ├── performance.py       # Capteur de charge CPU / RAM
-    └── applications.py      # Capteur de suivi des processus utilisateurs
+├── Code Source
+│   ├── main.pyw                 # Le moteur de capture invisible d'arrière-plan (Asyncio)
+│   ├── dashboard.pyw            # L'interface graphique d'administration (CustomTkinter)
+│   ├── config.py                # Configuration des variables et chemins locaux uniques
+│   ├── security.py              # Gestion du démarrage auto et des droits NTFS de la machine
+│   ├── writer.py                # Moteur d'écriture double et de compression GZIP asynchrone
+│   └── capteurs/                # Modules de surveillance indépendants (Package Python)
+│       ├── __init__.py          # Fichier d'initialisation (vide)
+│       ├── performance.py       # Capteur de charge CPU / RAM
+│       └── applications.py      # Capteur de suivi des processus utilisateurs
+│
+├── License
+└── README.md
 ```
 
 ---
