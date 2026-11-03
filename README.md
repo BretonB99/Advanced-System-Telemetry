@@ -53,9 +53,6 @@ MonProjetSupervision/
 ├── config.py                # Configuration des variables et chemins locaux uniques
 ├── security.py              # Gestion du démarrage auto et des droits NTFS de la machine
 ├── writer.py                # Moteur d'écriture double et de compression GZIP asynchrone
-├── app_icon.ico             # L'icône de sécurité personnalisée au format Windows
-├── compiler.iss             # Le script de compilation et de packaging pour Inno Setup
-│
 └── capteurs/                # Modules de surveillance indépendants (Package Python)
     ├── __init__.py          # Fichier d'initialisation (vide)
     ├── performance.py       # Capteur de charge CPU / RAM
