@@ -14,17 +14,21 @@ Le logiciel s'appuie sur une architecture asynchrone non bloquante (`asyncio`) c
 *   **Surveillance des Applications (`APPLICATIONS`) :** Détection instantanée (à 0,1s près) de l'ouverture et de la fermeture de chaque logiciel. Capture le nom du processus, son PID et l'utilisateur exact qui a lancé l'application.
 *   **Flux de Performances (`PERF`) :** Mesure en continu et à intervalle régulier de la charge globale du processeur (CPU %) et de l'utilisation de la mémoire vive (RAM %) pour identifier les ralentissements.
 
-### 🔌 Capteurs Réseau & Connectivité (Architecture Évolutive)
+### 🕐 À la prochaine version (v1.1.0)
+
+À la prochaine mise à jour, de nouveaux capteurs seront disponibles. J'ai listé ci-dessous tous les capteurs prévus pour la version v1.1.0. Si vous avez d'autres idées de capteurs, veuillez m'en faire part dans l'espace commentaires (Issues). J'essayerai de les ajouter à la version v1.2.0.
+
+#### 🔌 Capteurs Réseau & Connectivité (Architecture Évolutive)
 *   **Bande Passante & Volumes :** Calcul précis des Mo/Go téléchargés et téléversés par la machine pour repérer les surconsommations de données réseau.
 *   **Stabilité Internet (Ping) :** Envoi de requêtes automatisées ultra-légères vers un serveur stable pour mesurer la latence et journaliser les micro-coupures internet.
 *   **Connexions Actives (Sockets) :** Cartographie en direct des ports réseau ouverts et des adresses IP externes contactées par les logiciels en arrière-plan.
 
-### 💾 Matériel & Maintenance Préventive (Architecture Évolutive)
+#### 💾 Matériel & Maintenance Préventive (Architecture Évolutive)
 *   **Espace Stockage :** Suivi dynamique de l'espace libre restant (en Go et en %) sur l'ensemble des disques durs (`C:`, `D:`, etc.) pour anticiper les plantages liés à un disque saturé.
 *   **Santé du Matériel (Thermique) :** Lecture en temps réel des sondes de températures internes du processeur (CPU) et de la carte graphique (GPU).
 *   **Gestion Énergétique :** Suivi du niveau de batterie (pour les PC portables), de l'état de charge (secteur/batterie) et calcul de l'autonomie restante.
 
-### ⏰ Sessions & Activité Utilisateur (Architecture Évolutive)
+#### ⏰ Sessions & Activité Utilisateur (Architecture Évolutive)
 *   **Temps d'Activité (Uptime) :** Enregistrement de l'horodatage exact du dernier démarrage de Windows et calcul de la durée d'activité continue du système.
 *   **Détecteur d'Inactivité (Idle Time) :** Calcul du temps écoulé depuis la dernière action physique sur la souris ou le clavier pour analyser la présence réelle de l'utilisateur.
 *   **Gestion des Sessions Actives :** Journalisation du nombre et du nom des sessions Windows ouvertes en simultané (utilisateurs locaux et connexions à distance RDP).
